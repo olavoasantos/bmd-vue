@@ -1,3 +1,44 @@
+// Variables and definitions
 @import "@/components/nucleus/index.scss";
 
+// Reset styles
 @import "@/components/nucleus/reset/index.scss";
+
+// Main definitions
+html {
+  margin: 0;
+	border: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  color: color(black);
+	font-size: spacing(md);
+	vertical-align: baseline;
+	font-family: font-family(sans)
+}
+
+body {
+  margin: 0;
+	border: 0;
+	padding: 0;
+  width: 100vw;
+  height: 100vh;
+	line-height: 1;
+  color: color(black);
+	font-size: spacing(md);
+	vertical-align: baseline;
+  font-family: font-family(sans);
+  background-color: color(grey, lighter)
+}
+
+
+a {
+	& {
+		color: inherit;
+  	text-decoration: none
+	}
+
+  &:visited {
+    color: inherit
+  }
+}
