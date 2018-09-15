@@ -1,0 +1,23 @@
+@mixin color-classes($property) {
+  @each $color, $variants in $color-palette {
+    &-#{$color} {
+      @each $variant, $value in $variants {
+        @if $variant != base {
+          &-#{$variant} {
+            #{$property}: $value;
+          }
+          &-#{$variant}-hover:hover {
+            #{$property}: $value;
+          }
+        } @else {
+          & {
+            #{$property}: $value;
+          }
+          &-hover:hover {
+            #{$property}: $value;
+          }
+        }
+      }
+    }
+  }
+};
