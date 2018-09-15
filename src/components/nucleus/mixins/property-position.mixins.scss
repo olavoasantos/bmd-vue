@@ -1,0 +1,35 @@
+@mixin default-position-property($property, $value, $variant: null) {
+  @if $variant == null {
+    #{$property}: $value;
+  } @else {
+    #{$property}-#{$variant}: $value;
+  }
+};
+
+@mixin position-property($property, $value, $variant: null) {
+  @if $variant == null {
+    #{$property}-#{$position}: $value;
+  } @else {
+    #{$property}-#{$position}-#{$variant}: $value;
+  }
+};
+
+@mixin x-position-property($property, $value, $variant: null) {
+  @if $variant == null {
+    #{$property}-left: $value;
+    #{$property}-right: $value;
+  } @else {
+    #{$property}-left-#{$variant}: $value;
+    #{$property}-right-#{$variant}: $value;
+  }
+};
+
+@mixin y-position-property($property, $value, $variant: null) {
+  @if $variant == null {
+    #{$property}-top: $value;
+    #{$property}-bottom: $value;
+  } @else {
+    #{$property}-top-#{$variant}: $value;
+    #{$property}-bottom-#{$variant}: $value;
+  }
+};
