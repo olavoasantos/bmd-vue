@@ -1,0 +1,13 @@
+/// Returns the font stack for a given family.
+///
+/// @param {String} $family - The key for the given family.
+/// @return {Number} The font stack for the family.
+@function font-family($family: sans) {
+  $fetched-value: map-get($font-family, $family);
+
+  @if $fetched-value != null {
+    @return $fetched-value;
+  } @else {
+    @error 'Font family `#{$family}` not found. Available font families: #{available-names($font-family-data)}';
+  }
+}
