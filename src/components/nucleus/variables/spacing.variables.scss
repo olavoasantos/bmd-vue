@@ -1,11 +1,25 @@
 // Spacing definitions
 $spacing: (
+  // 0 px
   none: (0),
+  // 1 px
   px: (1px),
+  // 4 px
   2xs: ($unit),
+  // 8 px
   xs: ($unit * 2),
+  // 12 px
+  sm: ($unit * 3),
+  // 16 px
   md: ($unit * 4),
+  // 24 px
   lg: ($unit * 6),
-  xl: ($unit * 12),
-  2xl: ($unit * 16),
+  // 32 px
+  xl: ($unit * 8),
+  // 48 px
+  2xl: ($unit * 12),
+  // 56 px
+  3xl: ($unit * 14),
+  // 64 px
+  4xl: ($unit * 16),
 );
