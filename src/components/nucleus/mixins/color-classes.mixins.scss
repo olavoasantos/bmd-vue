@@ -4,17 +4,17 @@
       @each $variant, $value in $variants {
         @if $variant != base {
           &-#{$variant} {
-            #{$property}: $value;
+            #{$property}: $value
           }
           &-#{$variant}-hover:hover {
-            #{$property}: $value;
+            #{$property}: $value
           }
         } @else {
           & {
-            #{$property}: $value;
+            #{$property}: $value
           }
           &-hover:hover {
-            #{$property}: $value;
+            #{$property}: $value
           }
         }
       }
