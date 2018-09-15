@@ -1,0 +1,9 @@
+@function color($color, $variant: base) {
+  $fetched-value: map-get(map-get($color-palette, $color), $variant);
+
+  @if $fetched-value {
+    @return $fetched-value;
+  } @else {
+    @error 'Color variant `#{$color}-#{$variant}` not found. Available variants: #{available-names($color-palette)}';
+  }
+}
