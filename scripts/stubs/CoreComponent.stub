@@ -1,0 +1,17 @@
+
+export default {
+  props: {
+    name: {
+      type: String,
+      description: '',
+    },
+  },
+
+  data() {
+    return {};
+  },
+
+  methods: {},
+
+  computed: {},
+};

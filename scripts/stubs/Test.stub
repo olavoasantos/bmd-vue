@@ -1,0 +1,15 @@
+// eslint-disable-next-line
+import { mount } from '@vue/test-utils';
+import {{ name }} from './{{ name }}.vue';
+
+describe('Tests for {{ name }} component', () => {
+  let wrapper;
+  beforeEach(() => {
+    wrapper = mount({{ name }});
+  });
+
+  /** @test **/
+  test('is a Vue instance', () => {
+    expect(wrapper.isVueInstance()).toBeTruthy();
+  });
+});

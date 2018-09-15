@@ -1,0 +1,18 @@
+/**
+ * Import packages
+ */
+const CLI = require('node-assistant').default;
+
+/**
+ * Initialize commands
+ */
+const CreateComponent = require('./scripts/commands/CreateComponent');
+
+const Commands = [
+  CreateComponent,
+];
+
+/**
+ * Initialize CLI
+ */
+CLI.registerCommands(Commands).exec();

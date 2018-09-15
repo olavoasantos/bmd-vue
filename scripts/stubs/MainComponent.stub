@@ -1,0 +1,17 @@
+<template>
+  <div class="{{ nameLowerCase }}">
+    <slot />
+  </div>
+</template>
+
+<style lang="scss">
+  @import "@/components/nucleus/index.scss";
+
+  .{{ nameLowerCase }} {
+
+  }
+</style>
+
+<script>
+  export { default } from '@/core/{{ type }}/{{ name }}';
+</script>
