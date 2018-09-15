@@ -1,7 +1,3 @@
-/// Returns the spacing value for a given variant.
-///
-/// @param {String} $variant - The key for the given variant.
-/// @return {Number} The spacing for the variant.
 @function spacing($variant: md) {
   $fetched-value: map-get($spacing, $variant);
 

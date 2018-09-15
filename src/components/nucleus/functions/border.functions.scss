@@ -1,0 +1,3 @@
+@function border($color: color(transparent), $style: solid) {
+  @return spacing(px) $style $color;
+}

@@ -1,6 +1,3 @@
-/// Returns the shadow for the specified depth
-/// @param {String} $depth [base] - The shadow’s depth.
-/// @return {List} The shadow value.
 @function shadow($depth: md) {
   $fetched-value: map-get($shadows, $depth);
 
