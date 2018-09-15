@@ -1,0 +1,11 @@
+// Spacing definitions
+$spacing: (
+  none: (0),
+  px: (1px),
+  2xs: ($unit),
+  xs: ($unit * 2),
+  md: ($unit * 4),
+  lg: ($unit * 6),
+  xl: ($unit * 12),
+  2xl: ($unit * 16),
+);
