@@ -1,8 +1,9 @@
 <template>
   <div>
-    <Avatar
-      size="lg"
-      icon="trash"
+    <Badge
+      label="test"
+      text="red-dark"
+      color="red-lightest"
     />
   </div>
 </template>
