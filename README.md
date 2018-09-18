@@ -11,6 +11,9 @@ These are the most basic kind of elements. Though they don't have any visual rep
 - [x] Mixins
 - [x] Functions
 - [x] Variables
+- Filters
+  - [x] Icon
+  - [x] Initials
 
 ## Atoms
 
@@ -18,8 +21,8 @@ These are composed of the nucleus components, having their particular visual mar
 
 ### Proposed components
 
-- [x] Avatar
-- [ ] Badge
+- [x] [Avatar](https://github.com/olavoasantos/bmd-vue/tree/master/src/components/atoms/Avatar)
+- [x] [Badge](https://github.com/olavoasantos/bmd-vue/tree/master/src/components/atoms/Badge)
 - [ ] Button
 - [ ] Card
 - [ ] Checkbox
