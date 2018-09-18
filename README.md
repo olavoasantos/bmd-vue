@@ -6,11 +6,11 @@ These are the most basic kind of elements. Though they don't have any visual rep
 
 ### Proposed components
 
-Animations
-Reset
-Mixins
-Functions
-Variables
+- [ ] Animations
+- [x] Reset
+- [x] Mixins
+- [x] Functions
+- [x] Variables
 
 ## Atoms
 
@@ -18,40 +18,40 @@ These are composed of the nucleus components, having their particular visual mar
 
 ### Proposed components
 
-Avatar
-Badge
-Button
-Card
-Checkbox
-Code
-Col
-Container
-Display
-Divisor
-Dropdown
-H1-H5
-Icon
-Image
-Input
-Label
-List
-Loader
-Message
-Modal (position: center, top, right, bottom, left)
-Progress
-Quote
-Radio
-Row
-Small
-Steps
-Switch
-Tab
-Table
-Tag
-Text
-Textarea
-Timeline
-Tooltip
+- [x] Avatar
+- [ ] Badge
+- [ ] Button
+- [ ] Card
+- [ ] Checkbox
+- [ ] Code
+- [ ] Col
+- [ ] Container
+- [ ] Display
+- [ ] Divisor
+- [ ] Dropdown
+- [ ] H1-H5
+- [ ] Icon
+- [ ] Image
+- [ ] Input
+- [ ] Label
+- [ ] List
+- [ ] Loader
+- [ ] Message
+- [ ] Modal (position: center, top, right, bottom, left)
+- [ ] Progress
+- [ ] Quote
+- [ ] Radio
+- [ ] Row
+- [ ] Small
+- [ ] Steps
+- [ ] Switch
+- [ ] Tab
+- [ ] Table
+- [ ] Tag
+- [ ] Text
+- [ ] Textarea
+- [ ] Timeline
+- [ ] Tooltip
 
 ## Molecules
 
@@ -59,14 +59,14 @@ These are composed by one or more atoms and have one single responsibility.
 
 ### Proposed components
 
-Avatar list
-Calendar
-Carousel
-Field elements
-File upload
-Multiple select
-Notifications
-Tabs
+- [ ] Avatar list
+- [ ] Calendar
+- [ ] Carousel
+- [ ] Field elements
+- [ ] File upload
+- [ ] Multiple select
+- [ ] Notifications
+- [ ] Tabs
 
 ## Organelles
 
@@ -74,14 +74,14 @@ These are composed of one or more atoms and molecules. These have more than one 
 
 ### Proposed components
 
-Autocomplete
-Drag and drop suite
-Form
-Graphs
-Maps
-Menu (MenuItem)
-Navbar
-Search
+- [ ] Autocomplete
+- [ ] Drag and drop suite
+- [ ] Form
+- [ ] Graphs
+- [ ] Maps
+- [ ] Menu (MenuItem)
+- [ ] Navbar
+- [ ] Search
 
 ## Cells
 
@@ -89,8 +89,8 @@ These are composed of one or more organelles, molecules and atoms. These group a
 
 ### Proposed components
 
-Data table
-Schedule (Year, Month, Week, Day, Event)
+- [ ] Data table
+- [ ] Schedule (Year, Month, Week, Day, Event)
 
 ## Tissues
 
