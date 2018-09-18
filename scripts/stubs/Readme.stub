@@ -1,0 +1,13 @@
+# {{ name }}
+
+## API
+
+```jsx
+<{{ name }}
+
+/>
+```
+
+## Props
+
+// Define props

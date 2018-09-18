@@ -62,6 +62,13 @@ class CreateComponent extends BaseCommand {
       variables,
     );
 
+    if (!this.silent) this.$info('- Creating readme file...');
+    this.createFile(
+      `./src/components/${type.lower}/${name.upper}/README.md`,
+      './scripts/stubs/Readme.stub',
+      variables,
+    );
+
     if (!this.silent) this.$success(`✓ Core '${name}' created! ./src/core/${type.lower}/${name.upper}/index.js`);
     if (!this.silent) this.$success(`✓ Component '${name}' created! ./src/components/${type.lower}/${name.upper}/${name.upper}.vue`);
 
