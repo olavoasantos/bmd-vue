@@ -1,6 +1,9 @@
 <template>
   <div>
-    Test
+    <Avatar
+      size="lg"
+      icon="trash"
+    />
   </div>
 </template>
 

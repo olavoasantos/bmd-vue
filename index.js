@@ -1,7 +1,7 @@
-// import * as components from './src';
+import * as components from '@/components';
 
 export function install(Vue) {
-  Vue.component();
+  Vue.component('Avatar', components.Avatar);
 }
 
 let GlobalVue = null;

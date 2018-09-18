@@ -42,3 +42,35 @@ a {
     color: inherit
   }
 }
+
+.bg {
+  @include color-classes(background-color);
+}
+
+.text {
+  @include color-classes(color);
+}
+
+.fill {
+  @include color-classes(fill);
+
+  &-primary {
+    fill: #556080
+  }
+
+  &-secondary {
+    fill: #E8EDEE
+  }
+}
+
+.stroke {
+  @include color-classes(stroke);
+
+  &-primary {
+    stroke: #556080
+  }
+
+  &-secondary {
+    stroke: #E8EDEE
+  }
+}
