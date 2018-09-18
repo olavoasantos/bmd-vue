@@ -1,0 +1,13 @@
+@import "@/components/nucleus/index.scss";
+
+.badge {
+  & {
+    overflow: hidden;
+    user-select: none;
+    white-space: nowrap;
+    display: inline-block;
+    text-overflow: ellipsis;
+    padding: spacing(xs) spacing(md);
+    border-radius: border-radius(rounded)
+  }
+}
