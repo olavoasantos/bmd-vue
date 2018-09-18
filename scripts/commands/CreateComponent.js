@@ -48,6 +48,13 @@ class CreateComponent extends BaseCommand {
     componentExportLine = `export { default as ${name.upper} } from '@/components/${type.lower}/${name.upper}/${name.upper}.vue';\n`;
     if (!contentExport.includes(componentExportLine)) this.appendToFile(`./src/components/index.js`, componentExportLine);
 
+    if (!this.silent) this.$info('- Creating stylesheet file...');
+    this.createFile(
+      `./src/components/${type.lower}/${name.upper}/${name.upper}.scss`,
+      './scripts/stubs/Stylesheet.stub',
+      variables,
+    );
+
     if (!this.silent) this.$info('- Creating test file...');
     this.createFile(
       `./src/components/${type.lower}/${name.upper}/${name.upper}.tests.js`,
