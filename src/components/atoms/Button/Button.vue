@@ -17,7 +17,9 @@
       [`text-${text}`]: !!text,
       [`button-disabled`]: !!disabled,
       [`bg-${colorHover}-hover`]: !!colorHover,
+      [`bg-${colorFocus}-focus`]: !!colorFocus,
       [`text-${textHover}-hover`]: !!textHover,
+      [`text-${textFocus}-focus`]: !!textFocus,
     }"
   >
     <slot>

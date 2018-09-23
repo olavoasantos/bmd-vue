@@ -9,11 +9,17 @@
           &-#{$variant}-hover:hover {
             #{$property}: $value
           }
+          &-#{$variant}-focus:focus {
+            #{$property}: $value
+          }
         } @else {
           & {
             #{$property}: $value
           }
           &-hover:hover {
+            #{$property}: $value
+          }
+          &-focus:focus {
             #{$property}: $value
           }
         }

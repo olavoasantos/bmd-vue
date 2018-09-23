@@ -66,22 +66,26 @@ export default {
     },
     color: {
       type: String,
-      default: 'grey-light',
       description: 'Sets the background color of the button',
     },
     colorHover: {
       type: String,
-      default: 'grey-lighter',
       description: 'Sets the background hover color of the button',
+    },
+    colorFocus: {
+      type: String,
+      description: 'Sets the background focus color of the button',
     },
     text: {
       type: String,
-      default: 'black',
       description: 'Sets the text color of the button',
+    },
+    textFocus: {
+      type: String,
+      description: 'Sets the text focus color of the button',
     },
     textHover: {
       type: String,
-      default: 'black',
       description: 'Sets the text hover color of the button',
     },
   },

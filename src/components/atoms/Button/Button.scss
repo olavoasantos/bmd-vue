@@ -1,5 +1,27 @@
 @import "@/components/nucleus/index.scss";
 
 .button {
+  & {
+    cursor: pointer;
+    border: border();
+    overflow: hidden;
+    user-select: none;
+    white-space: nowrap;
+    color: color(white);
+    display: inline-block;
+    text-overflow: ellipsis;
+    padding: spacing(sm) spacing(xl);
+    border-color: color(transparent);
+    background-color: color(indigo);
+    border-radius: border-radius(rounded)
+  }
 
+  &:hover {
+    background-color: color(indigo, dark)
+  }
+
+  &:focus {
+    outline: none;
+    background-color: color(indigo, light)
+  }
 }
