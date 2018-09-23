@@ -23,7 +23,7 @@ These are composed of the nucleus components, having their particular visual mar
 
 - [x] [Avatar](https://github.com/olavoasantos/bmd-vue/tree/master/src/components/atoms/Avatar)
 - [x] [Badge](https://github.com/olavoasantos/bmd-vue/tree/master/src/components/atoms/Badge)
-- [ ] Button
+- [x] [Button](https://github.com/olavoasantos/bmd-vue/tree/master/src/components/atoms/Button)
 - [ ] Card
 - [ ] Checkbox
 - [ ] Code

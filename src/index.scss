@@ -51,6 +51,15 @@ a {
   @include color-classes(color);
 }
 
+.border {
+  & {
+    @include color-classes(border-color);
+  }
+  &:focus {
+    @include color-classes(border-color);
+  }
+}
+
 .fill {
   @include color-classes(fill);
 

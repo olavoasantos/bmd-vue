@@ -1,9 +1,7 @@
 <template>
   <div>
-    <Badge
+    <Button
       label="test"
-      text="red-dark"
-      color="red-lightest"
     />
   </div>
 </template>
