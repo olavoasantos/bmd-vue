@@ -1,0 +1,26 @@
+@import "@/components/nucleus/index.scss";
+
+.card {
+  & {
+    box-shadow: shadow();
+    border-radius: border-radius(sm);
+    background-color: color(white)
+  }
+
+  &-title {
+    padding: spacing(lg) spacing(md);
+    border-bottom: border(color(grey, lighter))
+  }
+
+  &-body {
+    padding: spacing(lg) spacing(md)
+  }
+
+  &-border {
+    border-left: spacing(2xs) solid transparent
+  }
+
+  &-rounded {
+    border-radius: border-radius()
+  }
+}
