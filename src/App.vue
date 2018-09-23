@@ -1,9 +1,13 @@
 <template>
   <div>
-    <Badge
+    <Button
+      autofocus
       label="test"
       text="red-dark"
+      color-hover="blue"
       color="red-lightest"
+      text-hover="green-dark"
+      value="crap"
     />
   </div>
 </template>

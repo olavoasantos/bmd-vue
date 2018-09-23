@@ -1,11 +1,11 @@
 // eslint-disable-next-line
 import { mount } from '@vue/test-utils';
-import Badge from './Badge.vue';
+import Button from './Button.vue';
 
-describe('Tests for Badge component', () => {
+describe('Tests for Button component', () => {
   let wrapper;
   beforeEach(() => {
-    wrapper = mount(Badge);
+    wrapper = mount(Button);
   });
 
   /** @test * */
