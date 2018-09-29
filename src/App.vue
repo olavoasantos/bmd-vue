@@ -17,11 +17,21 @@
         <Button>Test</Button>
       </div>
     </Card>
+    <Code language="jsx">
+      {{ code }}
+    </Code>
   </div>
 </template>
 
 <script>
 export default {
+  data: () => ({
+    code: `class Test extends Component {
+        render() {
+          return <Code></Code>;
+        }
+      }`,
+  }),
   methods: {
     log() {
       console.log('CLICKED');
