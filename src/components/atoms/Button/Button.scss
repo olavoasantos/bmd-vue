@@ -12,16 +12,16 @@
     text-overflow: ellipsis;
     padding: spacing(sm) spacing(xl);
     border-color: color(transparent);
-    background-color: color(indigo);
+    background-color: color(primary);
     border-radius: border-radius(rounded)
   }
 
   &:hover {
-    background-color: color(indigo, dark)
+    background-color: color(primary, dark)
   }
 
   &:focus {
     outline: none;
-    background-color: color(indigo, light)
+    background-color: color(primary, light)
   }
 }

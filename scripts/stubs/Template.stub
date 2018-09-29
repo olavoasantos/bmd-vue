@@ -1,0 +1,3 @@
+<div class="{{ nameLowerCase }}"{{ functional }}>
+  <slot />
+</div>

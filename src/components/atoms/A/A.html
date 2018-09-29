@@ -1,0 +1,16 @@
+<a
+  class="a"
+  :download="download"
+  :hreflang="hreflang"
+  :media="media"
+  :ping="ping"
+  :rel="rel"
+  :target="target"
+  :type="type"
+  :href="href"
+  :class="{
+    [`text-${align}`]: !!align,
+  }"
+>
+  <slot />
+</a>

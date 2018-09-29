@@ -1,0 +1,16 @@
+@import "@/components/nucleus/index.scss";
+
+.a {
+  & {
+    color: color(primary);
+  	text-decoration: none
+  }
+
+  &:hover {
+    color: color(primary, lighter)
+  }
+
+  &:visited {
+    color: inherit
+  }
+}

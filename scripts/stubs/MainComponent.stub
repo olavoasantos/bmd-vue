@@ -1,13 +1,5 @@
-<template>
-  <div class="{{ nameLowerCase }}">
-    <slot />
-  </div>
-</template>
+import './{{ name }}.scss';
+import Core from './{{ name }}';
+import {{ name }} from './{{ template }}.html';
 
-<style lang="scss">
-  @import "./{{ name }}.scss";
-</style>
-
-<script>
-  export { default } from '@/core/{{ type }}/{{ name }}';
-</script>
+export default {{ name }}(Core);

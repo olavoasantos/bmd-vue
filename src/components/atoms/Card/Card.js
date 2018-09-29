@@ -21,12 +21,4 @@ export default {
       description: 'Sets the border color of the card',
     },
   },
-
-  data() {
-    return {};
-  },
-
-  methods: {},
-
-  computed: {},
 };

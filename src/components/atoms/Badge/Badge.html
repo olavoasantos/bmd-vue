@@ -1,0 +1,11 @@
+<div
+  class="badge"
+  :class="{
+    [`bg-${color}`]: !!color,
+    [`text-${text}`]: !!text,
+  }"
+>
+  <slot>
+    {{ label }}
+  </slot>
+</div>

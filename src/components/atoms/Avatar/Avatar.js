@@ -1,5 +1,5 @@
-import icon from '@/core/nucleus/filters/icon';
-import initials from '@/core/nucleus/filters/initials';
+import icon from '@/components/nucleus/filters/icon';
+import initials from '@/components/nucleus/filters/initials';
 
 export default {
   props: {

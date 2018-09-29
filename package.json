@@ -22,10 +22,12 @@
     "@vue/test-utils": "^1.0.0-beta.20",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^23.0.1",
+    "html-loader": "^0.5.5",
     "node-assistant": "^0.1.6",
     "node-sass": "^4.9.0",
     "pluralize": "^7.0.0",
     "sass-loader": "^7.0.1",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "vue-template-loader": "^1.0.0"
   }
 }

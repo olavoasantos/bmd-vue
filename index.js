@@ -1,6 +1,7 @@
 import * as components from '@/components';
 
 export function install(Vue) {
+  Vue.component('A', components.A);
   Vue.component('Card', components.Card);
   Vue.component('Badge', components.Badge);
   Vue.component('Avatar', components.Avatar);

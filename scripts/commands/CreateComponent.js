@@ -20,33 +20,25 @@ class CreateComponent extends BaseCommand {
     };
     const variables = {
       name: name.upper,
-      nameLowerCase: name.lower,
       type: type.lower,
+      nameLowerCase: name.lower,
+      functional: this.functional ? ' functional' : '',
+      template: this.functional ? `${name.upper}.functional` : name.upper,
     };
+
+    if (!this.silent) this.$info('- Creating template file...');
+    this.createFile(
+      `./src/components/${type.lower}/${name.upper}/${variables.template}.html`,
+      './scripts/stubs/Template.stub',
+      variables,
+    );
 
     if (!this.silent) this.$info('- Creating core component...');
     this.createFile(
-      `./src/core/${type.lower}/${name.upper}/index.js`,
-      './scripts/stubs/CoreComponent.stub',
+      `./src/components/${type.lower}/${name.upper}/${name.upper}.js`,
+      './scripts/stubs/Core.stub',
       variables,
     );
-
-    if (!this.silent) this.$info('- Registering core component export...');
-    let contentExport = this.loadContentsFrom(`./src/core/index.js`);
-    let componentExportLine = `export { default as ${name.upper} } from '@/core/${type.lower}/${name.upper}';\n`;
-    if (!contentExport.includes(componentExportLine)) this.appendToFile(`./src/core/index.js`, componentExportLine);
-
-    if (!this.silent) this.$info('- Creating component...');
-    this.createFile(
-      `./src/components/${type.lower}/${name.upper}/${name.upper}.vue`,
-      './scripts/stubs/MainComponent.stub',
-      variables,
-    );
-
-    if (!this.silent) this.$info('- Registering component export...');
-    contentExport = this.loadContentsFrom(`./src/components/index.js`);
-    componentExportLine = `export { default as ${name.upper} } from '@/components/${type.lower}/${name.upper}/${name.upper}.vue';\n`;
-    if (!contentExport.includes(componentExportLine)) this.appendToFile(`./src/components/index.js`, componentExportLine);
 
     if (!this.silent) this.$info('- Creating stylesheet file...');
     this.createFile(
@@ -69,8 +61,19 @@ class CreateComponent extends BaseCommand {
       variables,
     );
 
-    if (!this.silent) this.$success(`✓ Core '${name}' created! ./src/core/${type.lower}/${name.upper}/index.js`);
-    if (!this.silent) this.$success(`✓ Component '${name}' created! ./src/components/${type.lower}/${name.upper}/${name.upper}.vue`);
+    if (!this.silent) this.$info('- Creating the main component file...');
+    this.createFile(
+      `./src/components/${type.lower}/${name.upper}/index.js`,
+      './scripts/stubs/MainComponent.stub',
+      variables,
+    );
+
+    if (!this.silent) this.$info('- Registering component export...');
+    const contentExport = this.loadContentsFrom(`./src/components/index.js`);
+    const componentExportLine = `export { default as ${name.upper} } from '@/components/${type.lower}/${name.upper}';\n`;
+    if (!contentExport.includes(componentExportLine)) this.appendToFile(`./src/components/index.js`, componentExportLine);
+
+    if (!this.silent) this.$success(`✓ Component '${name}' created! ./src/components/${type.lower}/${name.upper}/${name.upper}.js`);
 
     return this;
   }
@@ -86,6 +89,8 @@ CreateComponent.OPTIONS = [
   },
   { name: 'name', description: 'The name of the component' },
 ];
-CreateComponent.FLAGS = [];
+CreateComponent.FLAGS = [
+  { name: 'functional', alias: 'f', description: 'Create a functional component' },
+];
 
 module.exports = CreateComponent;
